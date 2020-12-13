@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main">
+    <div class="main-content">
+        <div class="bg-light py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-0"><a href="/Home/Index" style="color:orangered">Trang chủ</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Quản Lý Công Việc Thực Hiện </strong></div>
+                </div>
+            </div>
+        </div>
+        <li>
+            <a href="#subPage" data-toggle="collapse" class="collapsed" class="row"><i class="lnr lnr-file-empty"></i> <span>Công Việc Đầu Năm</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+            <div id="subPage" class="collapse ">
+                <ul class="sidenav-second-level collapse show" id="dashboard" data-parent="#accordion">
+                    @*<li class="active"> <a href="index.html">Dashboard 1</a> </li>*@
+                    <li> <a href="/ManageTask/TaskDetail">Nội dung công việc 1</a></li>
+                    <li> <a href="/danh-sach-cong-viec">Nội dung công việc 2</a></li>
+                    @*<li> <a href="dashboard-4.html">Dashboard 4</a></li>
+                        <li> <a href="dashboard-5.html">Dashboard 5</a></li>
+                        <li> <a href="dashboard-6.html">Dashboard 6</a></li>*@
+                    @*<li> <a href="dashboard-crypto.html">Dashboard Crypto <span class="badge badge-success">New</span></a></li>*@
+                </ul>
+            </div>
+        </li>
+    </div>
+</div>

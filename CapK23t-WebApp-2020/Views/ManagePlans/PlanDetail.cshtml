@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "PlanDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main">
+    <div class="main-content">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-title text-center">
+                    <h2>Kế hoạch</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-title text-center">
+                    <div class="col-md-12">
+
+                        <div class="form-group">
+                            <input class="form-control" name="tenkehoach" placeholder="Tên Kế Hoạch :" required data-errormessage-value-missing="Hãy nhập tên kế hoạch !">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" name="lop" placeholder="Lớp Chủ Nhiệm :" required data-errormessage-value-missing="Hãy nhập Lớp chủ nhiệm !">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" style="height:100px" name="noidung" placeholder="Nội Dung Kế Hoạch :" required data-errormessage-value-missing="Hãy nhập nội dung">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" name="thoigian" placeholder="Thời Gian Dự Kiến :" required data-errormessage-value-missing="Hãy nhập thời gian dự kiến">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" style="height:60px" name="phoihop" placeholder="Phối Hợp :" required data-errormessage-value-missing="Hãy nhập phối hợp">
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-control" style="height:60px" name="chuanbi" placeholder="Chuẩn bị :" required data-errormessage-value-missing="Hãy nhập chuẩn bị">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary btn-sm" style="background-color:#d65106;color:white;">Lưu Kế Hoạch</button>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
